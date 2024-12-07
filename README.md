@@ -1,66 +1,50 @@
-## Foundry
+# (X) Twitter
+A Twitter (X) smart contract.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Features
 
-Foundry consists of:
+1. Send a Tweet
+2. Reply to a Tweet
+3. Like a Tweet
+4. Tip a Tweet
+5. Update Profile
+6. Follow a User
+7. Unfollow a User
+8. Report a Tweet
+9. Get Tweet
+10. Get Replies
+11. Get Following
+12. Get Reports
+13. Remove Follower
+14. Remove Following
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
+## Build Contract
 
 ```shell
-$ forge test
+$ forge b
 ```
 
-### Format
+## Running Test
 
 ```shell
-$ forge fmt
+$ forge t
 ```
-
-### Gas Snapshots
+### Deploy & Verify
 
 ```shell
-$ forge snapshot
+$ forge create --rpc-url https://rpc.sepolia-api.lisk.com --etherscan-api-key 123 --verify --verifier blockscout --verifier-url https://sepolia-blockscout.lisk.com/api --private-key <private-key> src/<contract-file>:<contract-name>
 ```
 
-### Anvil
+Example:
 
 ```shell
-$ anvil
+$ forge create --rpc-url https://rpc.sepolia-api.lisk.com --etherscan-api-key 123 --verify --verifier blockscout --verifier-url https://sepolia-blockscout.lisk.com/api --private-key <your-private-key> src/Twitter.sol:Twitter
 ```
 
-### Deploy
+### Deployed & Verified Contract Addresses
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+Twitter: 0xB70b5532324315C809e4479725a1D9dAa51A7E54
 
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## Explorer Link
+- Link to Twitter deployed smart contract on Lisk Testnet Explorer: [https://sepolia-blockscout.lisk.com/address/0xB70b5532324315C809e4479725a1D9dAa51A7E54](https://sepolia-blockscout.lisk.com/address/0xB70b5532324315C809e4479725a1D9dAa51A7E54)
