@@ -45,6 +45,7 @@ $ forge create --rpc-url https://rpc.sepolia-api.lisk.com --etherscan-api-key 12
 
 ```shell
 Twitter: 0xB70b5532324315C809e4479725a1D9dAa51A7E54
+```
 
 ## Explorer Link
 - Link to Twitter deployed smart contract on Lisk Testnet Explorer: [https://sepolia-blockscout.lisk.com/address/0xB70b5532324315C809e4479725a1D9dAa51A7E54](https://sepolia-blockscout.lisk.com/address/0xB70b5532324315C809e4479725a1D9dAa51A7E54)
